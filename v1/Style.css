@@ -1,0 +1,138 @@
+body {
+  width: auto;
+  height: auto;
+}
+.gray {
+  display: grid;
+  height: 100px;
+  background-color: rgb(150, 150, 150);
+  justify-content: space-around;
+}
+
+.yellow {
+  width: 100%;
+}
+
+.row {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 20px;
+  border: solid, 1px, black;
+  /*background-color: rgb(174, 24, 233);*/
+  height: 500px;
+}
+
+.aqua {
+  margin-right: 10px;
+  width: 150px;
+  background-color: aquamarine;
+}
+.red {
+  margin-right: 10px;
+  width: 668px;
+  background-color: rgb(190, 26, 20);
+}
+.green {
+  display: grid;
+  margin-right: 10px;
+  width: 150px;
+  background-color: rgb(27, 163, 45);
+}
+
+.black {
+  margin-top: 20px;
+  height: 100px;
+  background-color: rgb(80, 79, 79);
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .red {
+    margin-right: 10px;
+    width: 547px;
+    background-color: rgb(190, 26, 20);
+  }
+  .row {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 20px;
+    border: solid, 1px, black;
+    /*background-color: rgb(174, 24, 233);*/
+    height: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .green {
+    height: 10%;
+    display: grid;
+    margin-right: 10px;
+    width: 708px;
+    background-color: rgb(27, 163, 45);
+  }
+
+  .yellow {
+    display: grid;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aqua {
+    height: 300px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: aquamarine;
+  }
+  .red {
+    height: 300px;
+    margin-right: 10px;
+    width: 668px;
+    background-color: rgb(190, 26, 20);
+  }
+  .row {
+    /* align-content: space-around;*/
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 20px;
+    border: solid, 1px, black;
+    height: 500px;
+  }
+  .yellow {
+    display: grid;
+    justify-content: center;
+    width: 367px;
+  }
+  .black {
+    margin-top: 80px;
+    height: 100px;
+    background-color: rgb(80, 79, 79);
+    justify-content: space-around;
+  }
+  @media (min-width: 200px) and (max-width: 767px) {
+    .row {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .red {
+      height: 300px;
+      margin-right: 10px;
+      width: 574px;
+      background-color: rgb(190, 26, 20);
+    }
+    .green {
+      height: 10%;
+      display: grid;
+      margin-right: 10px;
+      width: 547px;
+      background-color: rgb(27, 163, 45);
+    }
+    .yellow {
+      display: flex;
+      width: 367px;
+    }
+  }
+}
